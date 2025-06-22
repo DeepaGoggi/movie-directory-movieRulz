@@ -55,18 +55,19 @@ import { Container, Form, Button, Row, Alert } from "react-bootstrap";
 const defaultMovies = [
   {
     imdbID: "tt10698680",
-    Title: "KGF Chapter 1",
-    Year: "2018",
+    Title: "KGF Chapter 2",
+    Year: "2022",
     Type: "movie",
     Poster:
-      "https://resizing.flixster.com/qO53dQK8Q2ED_EgNuRKtKGQPODs=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzEwYTllYmMyLTE5N2EtNDVmYy1iZWUzLWI3NTAwZDEwZGQ2Yi53ZWJw",
+      "https://www.indiantelevision.com/sites/default/files/images/tv-images/2022/04/07/img_07042022_145600_800_x_800_pixel.jpg",
   },
   {
     imdbID: "tt4374286",
-    Title: "Ramachari",
-    Year: "2014",
+    Title: "Monstrum",
+    Year: "2018",
     Type: "movie",
-    Poster: "https://i.scdn.co/image/ab67616d0000b2733ded77413d50d4edbcc213fa",
+    Poster:
+      "https://m.media-amazon.com/images/M/MV5BZGM4OGFjNmQtN2RjOS00ODcyLWJmY2MtOGE4MzhmZmZkMWRkXkEyXkFqcGc@._V1_.jpg",
   },
   {
     imdbID: "tt15327088",
@@ -86,19 +87,18 @@ const defaultMovies = [
   },
   {
     imdbID: "tt0952640",
-    Title: "Taare Zameen Par",
+    Title: "Alvin and the Chipmunks",
     Year: "2007",
     Type: "movie",
-    Poster:
-      "https://cdn.cinematerial.com/p/297x/preabpt7/taare-zameen-par-indian-movie-poster-md.jpg?v=1456255125",
+    Poster: "https://m.media-amazon.com/images/I/51hQVFKMJIL.jpg",
   },
   {
     imdbID: "tt8178634",
-    Title: "Gully Boy",
-    Year: "2019",
+    Title: "RRR",
+    Year: "2022",
     Type: "movie",
     Poster:
-      "https://upload.wikimedia.org/wikipedia/en/0/07/Gully_Boy_poster.jpg",
+      "https://m.media-amazon.com/images/M/MV5BNWMwODYyMjQtMTczMi00NTQ1LWFkYjItMGJhMWRkY2E3NDAyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
   },
   {
     imdbID: "tt0111161",
@@ -127,19 +127,19 @@ const defaultMovies = [
   },
   {
     imdbID: "tt7268738",
-    Title: "Mahanati",
-    Year: "2018",
+    Title: "Minnal Murali",
+    Year: "2021",
     Type: "movie",
     Poster:
-      "https://m.media-amazon.com/images/M/MV5BYmU3ZjM1NTgtYjc2Mi00YzNjLWE1OWQtMjk5MDM4MmU3ZjZjXkEyXkFqcGc@._V1_.jpg",
+      "https://m.media-amazon.com/images/M/MV5BOWY0ZGJiNWYtNTUwMC00YjE4LTg2ODYtMDVjYTEyNTNjMjRhXkEyXkFqcGc@._V1_.jpg",
   },
   {
     imdbID: "tt5074352",
-    Title: "Baahubali 2: The Conclusion",
-    Year: "2017",
+    Title: "Dangal",
+    Year: "2016",
     Type: "movie",
     Poster:
-      "https://rukminim2.flixcart.com/image/850/1000/kzygpzk0/poster/r/q/s/large-movie-bahubali-2-posters-on-large-print-36x24-inches-original-imagbukjsjtksjsg.jpeg?q=90&crop=false",
+      "https://www.tallengestore.com/cdn/shop/products/7381744058548A_393fc709-d8bd-416d-9b71-823d7d492afa.jpg?v=1683929345",
   },
   {
     imdbID: "tt9389998",
@@ -151,14 +151,14 @@ const defaultMovies = [
   },
   {
     imdbID: "tt2338151",
-    Title: "Vikram Vedha",
-    Year: "2017",
+    Title: "PK",
+    Year: "2014",
     Type: "movie",
     Poster:
-      "https://m.media-amazon.com/images/M/MV5BYjc2YjVhNWQtYzVmZC00YzAyLTljNTItMmUxMTk1NjcyMThhXkEyXkFqcGc@._V1_.jpg",
+      "https://m.media-amazon.com/images/M/MV5BMTYzOTE2NjkxN15BMl5BanBnXkFtZTgwMDgzMTg0MzE@._V1_FMjpg_UX1000_.jpg",
   },
   {
-    imdbID: "tt7019942",
+    imdbID: "tt7019842",
     Title: "96",
     Year: "2018",
     Type: "movie",
@@ -166,7 +166,7 @@ const defaultMovies = [
       "https://m.media-amazon.com/images/M/MV5BMGI5M2Q4MDktOWVlOS00MzVjLWJlNzktMWZmYTkwOGI2MDc4XkEyXkFqcGc@._V1_.jpg",
   },
   {
-    imdbID: "tt10579952",
+    imdbID: "tt15097216",
     Title: "Jai Bhim",
     Year: "2021",
     Type: "movie",
