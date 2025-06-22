@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Container } from "react-bootstrap";
+import "./MovieDetails.css";
 
 const MovieDetails = () => {
   const { id } = useParams();
@@ -36,7 +37,7 @@ const MovieDetails = () => {
           </p>
         </>
       ) : (
-        <p>Loading...</p>
+        <div className="loader"></div>
       )}
     </Container>
   );
