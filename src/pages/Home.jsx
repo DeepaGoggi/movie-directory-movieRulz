@@ -142,7 +142,7 @@ const defaultMovies = [
       "https://rukminim2.flixcart.com/image/850/1000/kzygpzk0/poster/r/q/s/large-movie-bahubali-2-posters-on-large-print-36x24-inches-original-imagbukjsjtksjsg.jpeg?q=90&crop=false",
   },
   {
-    imdbID: "tt10698680",
+    imdbID: "tt9389998",
     Title: "Pushpa: The Rise - Part 1",
     Year: "2021",
     Type: "movie",
@@ -183,20 +183,26 @@ const Home = () => {
   const handleSearch = async (e) => {
     e.preventDefault();
     if (!searchTerm.trim()) return;
+    try {
+      const res = await fetch(
+        `https://www.omdbapi.com/?apikey=${
+          import.meta.env.VITE_OMDB_API_KEY
+        }&s=${searchTerm}`
+      );
+      const data = await res.json();
 
-    const res = await fetch(
-      `https://www.omdbapi.com/?apikey=${
-        import.meta.env.VITE_OMDB_API_KEY
-      }&s=${searchTerm}`
-    );
-    const data = await res.json();
-
-    if (data.Response === "True") {
-      setMovies(data.Search);
-      setError("");
-    } else {
+      if (data.Response === "True") {
+        setMovies(data.Search);
+        setError("");
+      } else {
+        setMovies([]);
+        setError(
+          "Oops! Sorry, we don’t have any movies matching your search.."
+        );
+      }
+    } catch (err) {
+      setError("Failed to fetch data from API.");
       setMovies([]);
-      setError("No movies found.");
     }
   };
 

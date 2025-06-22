@@ -46,7 +46,7 @@ import { Card, Col } from "react-bootstrap";
 const MovieCard = ({ movie }) => {
   return (
     <Col>
-      <Card>
+      <Card className="h-100">
         <Card.Img
           variant="top"
           src={

@@ -34,6 +34,7 @@
 
 // export default App
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "bootstrap-icons/font/bootstrap-icons.css";
 import Header from "./components/Header";
 import Home from "./pages/Home";
 import About from "./pages/About";
