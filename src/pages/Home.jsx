@@ -97,7 +97,7 @@ const defaultMovies = [
     Year: "2021",
     Type: "movie",
     Poster:
-      "https://lh3.googleusercontent.com/proxy/OS2Bbku9O_HyiQFnLmCikVNQ77VipxM842fdCWlqcjwcvDe2mAfEtsmvJ8oY-NBj5jagmmAIq-V2erAs0lOREXHhQZWE9x6bcLX6Lnq7nUdy4un8c1IUvAVBtgimhKW0Eg",
+      "https://xl.movieposterdb.com/22_01/2021/9389998/xl_9389998_6721d93c.jpg",
   },
   {
     imdbID: "tt2338151",
